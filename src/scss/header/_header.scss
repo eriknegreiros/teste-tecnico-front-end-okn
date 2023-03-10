@@ -1,0 +1,127 @@
+.header {
+    @include displayFlex(center, center, column);
+    background-color: $--white-color;
+    gap: 30px;
+    
+
+    .header-section-btn-social-media {
+        @include displayFlex(center, center, column);
+        background-color: $--white-color;
+        width: 100vw;
+        gap: 15px;   
+    }
+
+    .header-search {
+        @include displayFlex(center, center, row);
+        
+    }
+
+
+    .header-input-search {
+        width: 270px;
+        border: 0.6px solid $--black-color;
+        background-color: $--white-color;
+        font-family: $--font-third;
+        height: 30px;
+    }
+
+    .header-btn-search {
+        background-color: $--white-color;
+        border: 0.6px solid $--black-color;
+    }
+
+    .fa-search {
+        color: $--primary-color;
+        width: 25px;
+        height: 26px;
+        background: $--white-color;
+        border: none;
+    }
+
+    .header-social-media {
+        @include displayFlex(center, center, row);
+        gap: 5px;
+    }
+
+    .fa {
+        @include displayFlex(center, center, row);
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        background: $--white-color;
+    }
+
+    .fa-facebook,
+    .fa-instagram {
+        text-align: center;
+        background-color: $--white-color;
+        color: $--black-color;
+        border: 1px solid $--black-color;
+        width: 30px;
+        height: 30px;
+    }
+
+    
+    .fa-facebook:hover, .fa-instagram:hover, .header-btn-participate:hover{
+       background-color: $--black-color;
+       color: $--white-color; 
+       transition: 1s;
+    }
+
+    .header-btn-participate {
+        background-color: $--primary-color;
+        color: $--white-color;
+        font-family: $--font-third;
+        font-weight: 500;
+        min-width: 150px;
+        height: 30px;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .header-nav {
+        @include displayFlex(center, center, column);
+        background-color: $--primary-color;
+        width: 100vw;
+        gap: 15px;
+        height: auto;
+        margin: 5px;
+        
+    }
+
+    .header_li_nav {
+        font-family: $--font-third;
+        font-weight: 550;
+        font-size: 0.9rem;
+        color: $--white-color;
+        text-align: center;
+    }
+
+
+    @media (min-width: 768px) {
+        gap: 0px;
+
+        .header-section-btn-social-media {
+            @include displayFlex(space-around, center, row);
+            background-color: $--white-color;
+            width: 100vw;
+            height: 14vh;
+            position: fixed;
+            z-index: 999;
+            padding-top: 19px;
+        }
+
+        .header-nav {
+            @include displayFlex(center, center, row);
+            background-color: $--primary-color;
+            gap: 5vw;
+            width: 100vw;
+            height: 60px;
+            margin: 0px;
+            position: relative;
+            top: 36px;
+        }
+
+    }
+}

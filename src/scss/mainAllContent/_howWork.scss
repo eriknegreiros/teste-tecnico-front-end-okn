@@ -1,0 +1,118 @@
+.main-all-content {
+    .section-how-work {
+        @include displayFlex(center, center, column);
+        margin-top: 30px
+    }
+
+    .how-work-img-absolute{
+        display: none;
+    }
+
+    .how-work-div-text {
+        @include displayFlex(center, center, column);
+        gap: 10px;
+    }
+    .how-work-p {
+        font-family: $--font-secondary;
+        font-size: 0.9rem;
+        letter-spacing: 7px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .how-work-h1 {
+        font-family: $--font-primary;
+        color: $--primary-color;
+        text-align: center;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0em;
+    }
+
+    .how-work-article p {
+        font-family: $--font-third;
+        text-align: center;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .how-work-div-img {
+        @include displayFlex(center, center, row);
+        margin-top: 60px;
+    }
+
+    .how-work-img {
+        height: 50vh;
+        border-right: 40px solid $--primary-color;
+    }
+
+    .how-work-btn-more{
+        @include btnNormal()
+    }
+
+    .how-work-btn-arrow{
+        @include btnArrow()
+    }
+
+    @media (min-width: 768px) {
+        .section-how-work {
+            @include displayFlex(center, center, row);
+        }
+
+        .how-work-div-img-absolute{
+            @include displayFlex(center, center, row);
+        }
+
+        .how-work-img-absolute{
+            display: block;
+            position: absolute;
+            margin-bottom: 300px;
+            left: 0;
+        }
+
+        .how-work-div-text {
+            @include displayFlex(center, flex-end, column);
+            width: 50vw;
+            margin-top: 0px;
+            gap: 30px;
+        }
+
+        .how-work-p {
+            text-align: right;
+        }
+
+        .how-work-h1 {
+            text-align: right;
+            font-size: 2rem;
+            width: 30vw;
+        }
+
+        .how-work-article p {
+            text-align: right;
+            width: 46vw;
+        }
+
+        .how-work-div-img {
+            width: 100vw;
+        }
+
+        .how-work-img {
+            height: 80vh;
+            width: 38.8vw;
+            border-right: 60px solid $--primary-color;
+        }
+
+        .box-division-div{
+            width: 100vw;
+            @include displayFlex(center, center, row);
+        }
+        
+        .box{
+            width: 90px;
+            height: 79px;
+            background-color: $--primary-color;
+            border: 0.6px solid $--black-color;
+        }
+    }
+}

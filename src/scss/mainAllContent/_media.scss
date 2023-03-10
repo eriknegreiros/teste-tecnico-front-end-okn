@@ -1,0 +1,140 @@
+.main-all-content {
+    .section-media {
+        @include displayFlex(center, center, column);
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .media-div-text {
+        width: 95vw;
+        @include displayFlex(center, center, column);
+        gap: 20px;
+        margin: 10px;
+    }
+
+    .media-div-text-p {
+       font-family: $--font-secondary;
+        font-size: 0.9rem;
+        letter-spacing: 7px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .media-div-text-h1 {
+        text-align: center;
+        font-family: $--font-primary;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 43px;
+        letter-spacing: 0em;
+    }
+
+    .media-div-all-cards {
+        width: 75vw;
+        @include displayFlex(center, center, column);
+        gap: 50px;
+    }
+
+    .media-div-card {
+        width: 95vw;
+        height: auto;
+        border: 0.6px solid $--black-color;
+    }
+
+    .media-card-img {
+        padding: 10px;
+        width: auto;
+    }
+
+    .media-card-img-terra {
+        width: min-content;
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+    .media-card-h2 {
+        padding: 10px;
+        font-family: $--font-third;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.002em;
+        text-align: left;
+    }
+
+    .media-card-p {
+        padding: 10px;
+        font-family: $--font-third;
+        font-size: 0.8rem;
+        font-weight: 300;
+        line-height: 18px;
+        letter-spacing: 0.002em;
+        text-align: left;
+    }
+
+    .media-card-date {
+        padding: 10px;
+        font-family: $--font-third;
+        font-size: 0.8rem;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 15px;
+        letter-spacing: 0.002em;
+        text-align: left;
+    }
+
+    .media-p-read-more {
+        padding: 10px;
+        font-family: $--font-secondary;
+        color: $--white-color;
+    }
+
+    .media-div-read-more {
+        background-color: $--primary-color;
+    }
+
+    @media (min-width: 815px) {
+        .section-media {
+            @include displayFlex(center, center, row);
+            height: 60vh;
+            margin-top: 60px;
+        }
+
+        .media-div-text {
+            @include displayFlex(center, flex-start, column);
+            width: auto;
+            margin-left: 10vw;
+        }
+
+        .media-div-text-p {
+            text-align: left;
+            font-family: $--font-secondary;
+            font-size: 1rem;
+        }
+
+        .media-div-text-h1 {
+            text-align: left;
+            font-family: $--font-primary;
+            font-size: 2rem;
+            width: 20vw;
+        }
+        .media-div-all-cards {
+            width: 75vw;
+            @include displayFlex(center, center, row);
+            height: auto;
+        }
+
+        .media-div-card {
+            width: 15vw;
+            border: 1px solid $--black-color;
+        }
+
+        .media-card-img {
+            width: 15vw;
+        }
+
+        .media-card-p {
+            width: auto;
+        }
+    }
+}

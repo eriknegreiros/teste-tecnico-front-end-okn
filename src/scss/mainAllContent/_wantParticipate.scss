@@ -1,0 +1,60 @@
+.main-all-content {
+    .section-want-participate {
+        height: 40vh;
+        @include displayFlex(center, center, row);
+        gap: 20px;
+    }
+
+    .want-participate-div-img {
+        @include displayFlex(center, center, row);
+    }
+
+    .want-participate-img {
+        width: auto;
+    }
+
+    .want-participate-div-text {
+        @include displayFlex(center, left, column);
+        gap: 10px;
+    }
+
+    .want-participate-h1 {
+        font-family: $--font-primary;
+        text-align: center;
+        width: 70vw;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .want-participate-div-btn {
+        @include displayFlex(center, start, row);
+        gap: 5px;
+    }
+
+    .want-participate-btn-more{
+        @include btnNormal()
+    }
+
+    .want-participate-btn-arrow{
+
+        @include btnArrow()
+    }
+
+    @media (min-width: 768px) {
+        .want-participate-div-text {
+            @include displayFlex(center, start, column);
+        }
+        .want-participate-h1 {
+            text-align: left;
+            font-family: $--font-primary;
+            width: 25vw;
+            font-size: 2rem;
+            line-height: 40px;
+        }
+
+        .want-participate-div-img {
+            position: relative;
+            bottom: 50px;
+        }
+    }
+}

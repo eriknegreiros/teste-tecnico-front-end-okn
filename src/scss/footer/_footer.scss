@@ -1,0 +1,235 @@
+.footer-content {
+    .footer-all {
+        @include displayFlex(center, center, column);
+        margin-top: 20px;
+        gap: 20px;
+        height: auto;
+    }
+
+    .footer-fao-contact {
+        @include displayFlex(center, center, column);
+        width: 100vw;
+    }
+
+    .footer-ul {
+        @include displayFlex(center, center, column);
+        gap: 10px;
+    }
+
+    .fotter-fao-p {
+        font-family: $--font-secondary;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 15px;
+        letter-spacing: 0.002em;
+        text-align: left;
+    }
+
+    .fotter-fao-li {
+        font-family: $--font-secondary;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.002em;
+        text-align: left;
+    }
+
+    .footer-div-contact {
+        @include displayFlex(center, center, column);
+        gap: 20px;
+    }
+
+    .footer-contact-p {
+        font-family: $--font-secondary;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 15px;
+        letter-spacing: 0.002em;
+        text-align: left;
+        color: $--black-color;
+        margin-top: 40px;
+    }
+
+    .footer-adress {
+        text-align: center;
+        font-family: $--font-secondary;
+        color: $--black-color;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.002em;
+    }
+
+    .footer-celphone {
+        text-align: center;
+        font-family: $--font-secondary;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.002em;
+        color: $--black-color;
+    }
+
+    .footer-news {
+        width: 100vw;
+    }
+
+    .footer-celphone {
+        text-align: center;
+    }
+
+    .footer-news {
+        @include displayFlex(center, center, column);
+    }
+
+    .footer-form-email {
+        @include displayFlex(center, center, column);
+        gap: 10px;
+    }
+
+    .footer-news-h1 {
+        font-family: $--font-primary;
+        color: $--primary-color;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0.002em;
+        text-align: center;
+    }
+
+    .footer-news-input {
+        border: none;
+        border-bottom: 1px solid $--black-color;
+    }
+
+    .footer-assign-checked{
+         @include displayFlex(center, center, column);
+        gap: 10px;
+    }
+
+    .footer-news-checked-p {
+        font-family: $--font-secondary;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 9px;
+        letter-spacing: 0.002em;
+        text-align: left;
+    }
+
+
+
+    .footer-news-btn {
+        width: 200px;
+        background-color: $--white-color;
+        border: 1px solid $--black-color;
+        height: 25px;
+    }
+
+    .footer-btn-back-top {
+        font-family: $--font-secondary;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.002em;
+        text-align: left;
+    }
+
+    .footer-end {
+        @include displayFlex(center, center, column);
+        height: auto;
+        padding: 10px;
+        margin-top: 5px;
+        border-top: 1px solid $--black-color;
+    }
+
+    .footer-end-p {
+        text-align: center;
+        font-family: $--font-secondary;
+        font-size: 1rem;
+        font-weight: 400;
+
+    }
+
+    @media (min-width: 768px) {
+        .footer-all {
+            @include displayFlex(center, flex-start, row);
+            gap: 5vw;
+            padding: 5vh;
+            margin-top: 0px;
+        }
+
+        .footer-fao-contact {
+            @include displayFlex(center, flex-start, row);
+            width: 50vw;
+            height: 40vh;
+            border-right: 1px solid black;
+        }
+
+        .footer-ul {
+            @include displayFlex(center, flex-start, column);
+            gap: 20px;
+            width: 25vw;
+        }
+
+        .footer-div-contact {
+            @include displayFlex(center, flex-start, column);
+        }
+
+        .footer-contact-p {
+            margin-top: 0px;
+        }
+
+        .footer-adress {
+            text-align: left;
+            width: 27vw;
+        }
+
+        .footer-news {
+            width: 50vw;
+        }
+
+        .footer-celphone {
+            text-align: left;
+        }
+
+        .footer-news {
+            @include displayFlex(center, flex-start, row);
+            width: 50vw;
+            gap: 60px;
+        }
+
+        .footer-news-h1 {
+            width: 20vw;
+            font-size: 1.5rem;
+            text-align: left;
+        }
+        .footer-form-email {
+            @include displayFlex(center, flex-start, column);
+            gap: 20px;
+        }
+
+        .footer-news-input {
+            width: 25vw;
+            padding-bottom: 10px;
+        }
+
+        .footer-news-btn {
+            width: 25vw;
+            height: 35px;
+        }
+
+        .footer-btn-back-top {
+            width: 10vw;
+        }
+
+        .footer-end {
+            @include displayFlex(space-between, flex-start, row);
+            width: 100vw;
+            margin: 0px;
+            padding: 23px;
+            border-top: 1px solid $--black-color;
+        }
+
+
+    }
+}

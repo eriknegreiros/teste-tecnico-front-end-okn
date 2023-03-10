@@ -1,0 +1,108 @@
+.main-all-content {
+    .section-landpage {
+        @include displayFlex(center, center, column);
+        gap: 30px;
+    }
+    .landpage-div-with-text {
+        @include displayFlex(center, center, column);
+    }
+
+    .landpage-div-content {
+        @include displayFlex(center, left, column);
+        border: 1px solid $--black-color;
+        width: 90vw;
+        gap: 50px;
+        margin-top: 70px;
+        padding: 10px;
+    }
+
+    .landpage-p {
+        font-family: $--font-secondary;
+        font-size: 0.9rem;
+        letter-spacing: 7px;
+        font-weight: 600;
+    }
+
+    .landpage-btn-more {
+        @include btnNormal()
+    }
+
+    .landpage-btn-arrow {
+        @include btnArrow()
+    }
+
+    .landpage-btn-arrow:hover + .landpage-btn-more {
+        background-color: $--primary-color;
+        color: $--white-color;
+    }
+
+    .landpage-btn-more:hover + .landpage-btn-arrow {
+        background-color: $--primary-color;
+        color: $--white-color;
+    }
+
+    .landpage-article {
+        font-family: $--font-third;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .landpage-gif {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .landpage-h1 {
+        font-family: $--font-primary;
+        width: 80vw;
+        font-size: 1;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    span {
+        color: $--primary-color;
+    }
+
+    @media (min-width: 768px) {
+        .section-landpage {
+            @include displayFlex(center, center, row);
+            border: solid 1px black;
+        }
+
+        .landpage-div-with-text {
+            width: 50vw;
+            margin: 20px;
+        }
+
+        .landpage-div-content {
+            width: 40vw;
+            gap: 50px;
+            padding: 20px;
+        }
+
+        .landpage-p {
+            padding-top: 20px;
+        }
+
+        .landpage-h1 {
+            font-size: 1.8rem;
+            width: 29vw;
+            line-height: 35px;
+            text-align: left;
+        }
+
+        .landpage-div-gif {
+            display: block;
+            min-width: 50vw;
+            @include displayFlex(center, center, row);
+        }
+
+        .landpage-gif {
+            height: 94vh;
+            width: 50vw;
+            object-fit: cover;
+        }
+    }
+}
