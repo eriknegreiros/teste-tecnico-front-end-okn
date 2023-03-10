@@ -31,7 +31,6 @@
         @include btnArrow();
     }
     
-  
     .landpage-btn-arrow:hover + .landpage-btn-more {
         background-color: $--primary-color;
         color: $--white-color;
