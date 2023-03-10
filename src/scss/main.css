@@ -1628,8 +1628,8 @@ input {
     align-items: flex-start;
     flex-direction: row;
     gap: 5vw;
-    padding: 5vh;
     margin-top: 0px;
+    height: auto;
   }
   .footer-content .footer-fao-contact {
     display: flex;
@@ -1637,8 +1637,9 @@ input {
     align-items: flex-start;
     flex-direction: row;
     width: 50vw;
-    height: 40vh;
     border-right: 1px solid black;
+    height: 63vh;
+    padding: 25px;
   }
   .footer-content .footer-ul {
     display: flex;
@@ -1674,6 +1675,7 @@ input {
     flex-direction: row;
     width: 50vw;
     gap: 60px;
+    padding: 20px;
   }
   .footer-content .footer-news-h1 {
     width: 20vw;
@@ -1686,6 +1688,7 @@ input {
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
+    height: auto;
   }
   .footer-content .footer-news-input {
     width: 25vw;
@@ -1696,7 +1699,8 @@ input {
     height: 35px;
   }
   .footer-content .footer-btn-back-top {
-    width: 10vw;
+    width: 13vw;
+    padding: 20px;
   }
   .footer-content .footer-end {
     display: flex;
