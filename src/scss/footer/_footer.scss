@@ -159,15 +159,16 @@
         .footer-all {
             @include displayFlex(center, flex-start, row);
             gap: 5vw;
-            padding: 5vh;
             margin-top: 0px;
+            height: auto;
         }
 
         .footer-fao-contact {
             @include displayFlex(center, flex-start, row);
             width: 50vw;
-            height: 40vh;
             border-right: 1px solid black;
+            height: 63vh;
+            padding: 25px;
         }
 
         .footer-ul {
@@ -201,6 +202,7 @@
             @include displayFlex(center, flex-start, row);
             width: 50vw;
             gap: 60px;
+            padding: 20px;
         }
 
         .footer-news-h1 {
@@ -211,6 +213,7 @@
         .footer-form-email {
             @include displayFlex(center, flex-start, column);
             gap: 20px;
+            height: auto;
         }
 
         .footer-news-input {
@@ -224,7 +227,8 @@
         }
 
         .footer-btn-back-top {
-            width: 10vw;
+            width: 13vw;
+            padding: 20px;
         }
 
         .footer-end {
