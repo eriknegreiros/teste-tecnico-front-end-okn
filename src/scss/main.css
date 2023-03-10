@@ -86,7 +86,7 @@ a {
   color: #ffffff;
 }
 a:hover {
-  border-bottom: 1px solid #ffffff;
+  color: #000000;
   transition: 0.4s;
 }
 
@@ -175,6 +175,31 @@ input {
   align-items: center;
   flex-direction: row;
 }
+.header .menu:hover {
+  color: #000000;
+}
+.header .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00a39a;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.header .menu:hover .dropdown-content {
+  display: block;
+}
+.header .header_li_dropdown {
+  background-color: #00a39a;
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.header .header_li_dropdown:hover {
+  color: #000000;
+  transition: 0.4s;
+}
 .header .header-input-search {
   width: 270px;
   border: 0.6px solid #000000;
@@ -219,7 +244,9 @@ input {
   width: 30px;
   height: 30px;
 }
-.header .fa-facebook:hover, .header .fa-instagram:hover, .header .header-btn-participate:hover {
+.header .fa-facebook:hover,
+.header .fa-instagram:hover,
+.header .header-btn-participate:hover {
   background-color: #000000;
   color: #ffffff;
   transition: 1s;
@@ -252,6 +279,7 @@ input {
   font-size: 0.9rem;
   color: #ffffff;
   text-align: center;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .header {
@@ -893,6 +921,7 @@ input {
   line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
+  margin: 3px;
 }
 .main-all-content .how-work-div-img {
   display: flex;
@@ -1250,6 +1279,10 @@ input {
 }
 .main-all-content .media-div-read-more {
   background-color: #00a39a;
+  cursor: pointer;
+}
+.main-all-content .media-div-read-more:hover {
+  background-color: #000000;
 }
 @media (min-width: 815px) {
   .main-all-content .section-media {
@@ -1384,6 +1417,11 @@ input {
   border: none;
   width: 150px;
   height: 30px;
+  cursor: pointer;
+}
+.main-all-content .contact-btn-send:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 .main-all-content .contact-pre {
   overflow: hidden;
@@ -1412,6 +1450,17 @@ input {
     margin-top: 20px;
     position: relative;
     left: 40vw;
+  }
+  .main-all-content .contact-points {
+    color: #00a39a;
+    position: absolute;
+    right: 85vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 20px;
+    letter-spacing: 5px;
+    z-index: 5;
   }
 }
 
@@ -1565,6 +1614,12 @@ input {
   font-family: "Brown", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+}
+.footer-content .aoba {
+  background-color: red;
+}
+.footer-content .back-top {
+  color: #000000 !important;
 }
 @media (min-width: 768px) {
   .footer-content .footer-all {

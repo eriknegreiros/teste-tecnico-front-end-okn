@@ -1,10 +1,10 @@
 .main-all-content {
     .section-how-work {
         @include displayFlex(center, center, column);
-        margin-top: 30px
+        margin-top: 30px;
     }
 
-    .how-work-img-absolute{
+    .how-work-img-absolute {
         display: none;
     }
 
@@ -36,6 +36,7 @@
         line-height: 20px;
         letter-spacing: 0em;
         text-align: center;
+        margin: 3px;
     }
     .how-work-div-img {
         @include displayFlex(center, center, row);
@@ -47,12 +48,12 @@
         border-right: 40px solid $--primary-color;
     }
 
-    .how-work-btn-more{
-        @include btnNormal()
+    .how-work-btn-more {
+        @include btnNormal();
     }
 
-    .how-work-btn-arrow{
-        @include btnArrow()
+    .how-work-btn-arrow {
+        @include btnArrow();
     }
 
     @media (min-width: 768px) {
@@ -60,11 +61,11 @@
             @include displayFlex(center, center, row);
         }
 
-        .how-work-div-img-absolute{
+        .how-work-div-img-absolute {
             @include displayFlex(center, center, row);
         }
 
-        .how-work-img-absolute{
+        .how-work-img-absolute {
             display: block;
             position: absolute;
             margin-bottom: 300px;
@@ -103,12 +104,12 @@
             border-right: 60px solid $--primary-color;
         }
 
-        .box-division-div{
+        .box-division-div {
             width: 100vw;
             @include displayFlex(center, center, row);
         }
-        
-        .box{
+
+        .box {
             width: 90px;
             height: 79px;
             background-color: $--primary-color;

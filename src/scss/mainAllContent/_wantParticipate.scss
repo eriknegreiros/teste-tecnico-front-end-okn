@@ -31,13 +31,12 @@
         gap: 5px;
     }
 
-    .want-participate-btn-more{
-        @include btnNormal()
+    .want-participate-btn-more {
+        @include btnNormal();
     }
 
-    .want-participate-btn-arrow{
-
-        @include btnArrow()
+    .want-participate-btn-arrow {
+        @include btnArrow();
     }
 
     @media (min-width: 768px) {

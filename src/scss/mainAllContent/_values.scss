@@ -3,7 +3,7 @@
         @include displayFlex(center, center, column);
         height: auto;
         margin-top: 100px;
-        border-bottom: 0.6px solid; 
+        border-bottom: 0.6px solid;
     }
 
     .value-div-primary-color {
@@ -92,7 +92,6 @@
         letter-spacing: 0em;
         text-align: center;
         margin: 2px;
-        
     }
 
     @media (min-width: 768px) {
@@ -101,12 +100,9 @@
             height: 70vh;
             margin-top: 0px;
             gap: 80px;
-
         }
 
-        
-
-        .value-div-engine{
+        .value-div-engine {
             @include displayFlex(center, center, column);
         }
 
@@ -131,13 +127,10 @@
             width: 27vw;
         }
 
-
         .value-engine-h2 {
-            
             text-align: right;
-            
         }
-    
+
         .value-engine-p {
             text-align: end;
             padding: 10px;

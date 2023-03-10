@@ -9,12 +9,12 @@
         object-fit: cover;
     }
 
-    .project-video-div-pause-btn{
+    .project-video-div-pause-btn {
         @include displayFlex(center, center, column);
         width: 100vw;
     }
 
-    .project-video-btn-pause{
+    .project-video-btn-pause {
         z-index: 5;
         position: absolute;
         margin-bottom: 60px;

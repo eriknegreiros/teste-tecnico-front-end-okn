@@ -13,7 +13,7 @@
     }
 
     .media-div-text-p {
-       font-family: $--font-secondary;
+        font-family: $--font-secondary;
         font-size: 0.9rem;
         letter-spacing: 7px;
         font-weight: 600;
@@ -91,6 +91,10 @@
 
     .media-div-read-more {
         background-color: $--primary-color;
+        cursor: pointer;
+        &:hover {
+            background-color: $--black-color;
+        }
     }
 
     @media (min-width: 815px) {

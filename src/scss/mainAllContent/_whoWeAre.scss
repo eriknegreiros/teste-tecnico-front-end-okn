@@ -44,11 +44,11 @@
     }
 
     .who-we-are-btn-more {
-        @include btnNormal()
+        @include btnNormal();
     }
 
     .who-we-are-btn-arrow {
-        @include btnArrow()
+        @include btnArrow();
     }
 
     .who-we-are-points {

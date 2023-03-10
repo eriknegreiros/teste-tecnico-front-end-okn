@@ -24,11 +24,11 @@
     }
 
     .landpage-btn-more {
-        @include btnNormal()
+        @include btnNormal();
     }
 
     .landpage-btn-arrow {
-        @include btnArrow()
+        @include btnArrow();
     }
 
     .landpage-btn-arrow:hover + .landpage-btn-more {

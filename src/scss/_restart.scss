@@ -88,11 +88,11 @@ body {
     overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: $--white-color;
     &:hover {
-        border-bottom: 1px solid $--white-color;
+        color: $--black-color;
         transition: 0.4s;
     }
 }
