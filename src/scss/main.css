@@ -832,6 +832,11 @@ input {
   line-height: 14.25px;
   letter-spacing: 2px;
   border-bottom: 0.6px solid #000000;
+  cursor: pointer;
+}
+.main-all-content .slides-div-all-projects:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .main-all-content .section-slides {
@@ -1502,6 +1507,7 @@ input {
   line-height: 15px;
   letter-spacing: 0.002em;
   text-align: left;
+  cursor: pointer;
 }
 .footer-content .footer-div-contact {
   display: flex;
@@ -1614,9 +1620,6 @@ input {
   font-family: "Brown", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-}
-.footer-content .aoba {
-  background-color: red;
 }
 .footer-content .back-top {
   color: #000000 !important;
